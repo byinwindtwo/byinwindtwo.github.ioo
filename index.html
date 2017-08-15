@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
   <title>Title</title>
   <style>
     body {
@@ -33,7 +35,7 @@
       text-decoration: none;
       position: absolute;
       top: 0px;
-      left: 0px; 
+      left: 0px;
       transition: all 1s;
       line-height: 150px;
       text-align: center;
@@ -66,8 +68,8 @@
       border-radius: 50%;
       border: 3px solid transparent;
       border-top-color: #2EC06C;
-      -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-      animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+      -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
       z-index: 1001;
     }
 
@@ -97,8 +99,8 @@
       border: 3px solid transparent;
       border-top-color: #2EC06C;
 
-      -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-      animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+      -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+      animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
     }
 
     @-webkit-keyframes spin {
@@ -202,8 +204,11 @@
     a.style.display="none";
     $('.section-left').css({'transform':'translateX(-100%)'});
     $('.section-right').css({'transform':'translateX(100%)'});
-     $('#loader-wrapper').css({'z-index':'0'});
+  
   },2000);
+   setTimeout(function () {
+     $('#loader-wrapper').css({'z-index':'0'});
+     },3000);
 </script>
 <script type="text/javascript" src="js/roundabout.js"></script>
 <script type="text/javascript" src="js/roundabout_shapes.js"></script>
